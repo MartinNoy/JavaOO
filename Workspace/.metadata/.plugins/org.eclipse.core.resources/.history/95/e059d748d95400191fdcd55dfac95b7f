@@ -1,0 +1,57 @@
+package modelo;
+
+public class Circulo {
+	private Punto origen;
+	private double radio;
+	public Circulo(Punto origen, double radio) {
+		super();
+		this.origen = origen;
+		this.radio = radio;
+	}
+	public Punto getOrigen() {
+		return origen;
+	}
+	public void setOrigen(Punto origen) {
+		this.origen = origen;
+	}
+	public double getRadio() {
+		return radio;
+	}
+	public void setRadio(double radio) {
+		this.radio = radio;
+	}
+	
+	
+	@Override
+	public boolean equals(Circulo C) {
+		return ((origen==C.getOrigen())&&(radio==C.getRadio()));
+	}
+	
+	
+	@Override
+	public String toString() {
+		return "Circulo [origen=" + origen + ", radio=" + radio + "]";
+	}
+	
+	
+	public double calcularPerimetro();{
+		double perimetro=0;
+		
+		
+		return perimetro;
+	}
+	
+	public double calcularArea();{
+		double area=0;
+		
+		return area;
+	}
+	
+	public double calcularDistancia(Circulo c);{
+		double distancia=0;
+		
+		return distancia;
+	}
+	
+
+}

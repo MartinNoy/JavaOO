@@ -1,0 +1,12 @@
+package test;
+import consultorio.*;
+public class TestConsultorio {
+	public static void main(String args) {
+		//TODO Auto-generated method stub
+		Paciente paciente1 = new Paciente("Jose","Perez",1.80f,85);
+		Paciente paciente2 = new Paciente("Martin","Noy",1.75f,60);
+		
+		System.out.println("hola mundo");
+	}
+
+}

@@ -1,0 +1,117 @@
+package modelo;
+
+public class Numero {
+	private int N;
+
+	public Numero(int N) {
+		this.N = N;
+	}
+
+	public int getN() {
+		return N;
+	}
+
+	public void setN(int n) {
+		N = n;
+	}
+	
+	public int sumar(int N1) {
+		int resultado;
+		
+		resultado = N+N1;
+		
+		return resultado;
+	}
+	
+	public int multiplicar(int N1) {
+		int resultado;
+		
+		resultado = N*N1;
+		
+		return resultado;
+	}
+	
+	public boolean esPar() {
+		
+		if(N%2==1) {
+			return false;
+		}else {
+			return true;
+		}
+		
+		
+	}
+	
+	public boolean esPrimo() {
+		int resultado = 1;
+		
+        for (int i = 1; i <= N; i++) {
+            resultado *= i;
+        }
+ 
+		 if(resultado%N==0) {
+			 return true;
+		 }else {
+			 return false;
+		 }
+		
+	}
+	
+	public String convertirAString() {
+		
+		String NString = String.valueOf(N);
+		
+		return NString;
+	
+	}
+	
+	public double convertirADouble() {
+		
+		double NDouble = Double.parseDouble(convertirAString());
+		
+		return NDouble;
+	}
+	
+	public double calcularPotencia(int exp) {
+		
+		double resultado;
+		
+		resultado =Math.pow(N, exp);
+		
+		return resultado;
+	}
+	
+	public String pasarABase2() {
+	
+		return Integer.toBinaryString(N);
+	}
+	
+	public int calcularFactorial () {
+		int resultado = 1;
+		
+			for (int i = 1; i <= N; i++) {
+	            resultado *= i;
+	        }
+		
+		
+		return resultado;
+	}
+	
+	/*public int numeroCombinatorio(int n1) {
+		int resultado = 0;
+		n1.calcularFactorial();
+		return resultado;
+	}*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}
