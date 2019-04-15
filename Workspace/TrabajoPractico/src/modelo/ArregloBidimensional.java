@@ -18,7 +18,11 @@ public class ArregloBidimensional {
 	
 	public sumar(double[][] matrizB) {
 		double[][] resultado;
-		
+		for (int i=0; i<matrizA.length;i++) {
+			for(int j=0; j<matrizB[0].length;i++) {
+				resultado[i][j]=matrizA[i][j]+matrizB[i][j];
+			}
+		}
 		return resultado;
 	}
 	
