@@ -16,6 +16,7 @@ public class ArrelgoUnidimensional {
 		this.vector = vector;
 	}
 	
+	
 	public int[] ordenar() {
 		int aux = 0;
 		for (int i = 0; i <= vector.length ; i++) {
@@ -29,6 +30,7 @@ public class ArrelgoUnidimensional {
 		return vector;
 		
 	}
+	
 	
 	public double traerFrecuencia(int numero) {
 		double frecuencia = 0;
@@ -45,6 +47,7 @@ public class ArrelgoUnidimensional {
 		
 		return frecuencia;
 	}
+	
 	
 	public int traerModa() {
 		int moda = 0;
